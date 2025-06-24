@@ -33,8 +33,8 @@ async function sendEmail() {
   const gmail = google.gmail({ version: 'v1', auth });
 
   const rawMessage = createEmail(
-    'roshaniPrajapati2110@gmail.com',  // ✅ your Gmail here
-    'Test Email from Gmail API 🎯',
+    'roshaniPrajapati2110@gmail.com',  // your Gmail here
+    'Test Email from Gmail API ',
     'Hello! This email was sent using the Gmail API via Node.js--------'
   );
 
@@ -45,7 +45,7 @@ async function sendEmail() {
     },
   });
 
-  console.log('✅ Email sent:', res.data.id);
+  console.log('Email sent:', res.data.id);
 }
 
 sendEmail().catch(console.error);
